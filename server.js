@@ -2,8 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 const app = express();
 
-// ⚠️ VULNERABILITY 1: Hardcoded Secret (HIGH SEVERITY)
-// Isay AI ko "Hardcoded Secret" ya "Exposure of Sensitive Information" pakarna chahiye
+app.use(express.json());
 const AWS_SECRET_KEY = "AKIAIMNO7890ORSTUVWXYZ1234567890ABCDEFGH"; 
 
 const db = mysql.createConnection({
