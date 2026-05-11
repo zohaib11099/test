@@ -1,0 +1,13 @@
+{
+  "name": "codesentry-test-repo",
+  "version": "1.0.0",
+  "description": "A vulnerable repo to test CodeSentry AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"
+  }
+}
