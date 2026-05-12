@@ -40,3 +40,63 @@ eval("console.log('dangerous function')");
 
 const dbPassword = "superSecretPassword123!"; // Hardcoded password
 eval("console.log('dangerous function')"); 
+
+app.post('/getUser', (req, res) => {
+  const userId = req.body.id;
+  
+  // ⚠️ VULNERABILITY 2: SQL Injection (Unparameterized query)
+  db.query("SELECT * FROM users WHERE id = " + userId, (err, results) => {
+    if (err) {
+      return res.status(500).send('Server error');
+    }
+    res.json(results);
+  });
+});
+
+app.post('/getUser', (req, res) => {
+  const userId = req.body.id;
+  
+  // ⚠️ VULNERABILITY 2: SQL Injection (Unparameterized query)
+  db.query("SELECT * FROM users WHERE id = " + userId, (err, results) => {
+    if (err) {
+      return res.status(500).send('Server error');
+    }
+    res.json(results);
+  });
+});
+
+app.post('/getUser', (req, res) => {
+  const userId = req.body.id;
+  
+  // ⚠️ VULNERABILITY 2: SQL Injection (Unparameterized query)
+  db.query("SELECT * FROM users WHERE id = " + userId, (err, results) => {
+    if (err) {
+      return res.status(500).send('Server error');
+    }
+    res.json(results);
+  });
+});
+
+app.post('/getUser', (req, res) => {
+  const userId = req.body.id;
+  
+  // ⚠️ VULNERABILITY 2: SQL Injection (Unparameterized query)
+  db.query("SELECT * FROM users WHERE id = " + userId, (err, results) => {
+    if (err) {
+      return res.status(500).send('Server error');
+    }
+    res.json(results);
+  });
+});
+
+app.post('/getUser', (req, res) => {
+  const userId = req.body.id;
+  
+  // ⚠️ VULNERABILITY 2: SQL Injection (Unparameterized query)
+  db.query("SELECT * FROM users WHERE id = " + userId, (err, results) => {
+    if (err) {
+      return res.status(500).send('Server error');
+    }
+    res.json(results);
+  });
+});
