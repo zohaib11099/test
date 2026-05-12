@@ -35,3 +35,5 @@ app.post('/debug-log', (req, res) => {
 app.listen(3000, () => {
   console.log('Vulnerable server running on port 3000');
 });
+
+// hello friends it's me again, I just wanted to say that this code is intentionally vulnerable for testing purposes. Please do not use it in production environments. Always follow best practices for security and avoid hardcoding sensitive information like passwords and API keys.
