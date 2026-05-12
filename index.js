@@ -32,3 +32,11 @@ app.listen(3000, () => {
 
 const dbPassword = "superSecretPassword123!"; // Hardcoded password
 eval("console.log('dangerous function')"); 
+
+
+const dbPassword = "superSecretPassword123!"; // Hardcoded password
+eval("console.log('dangerous function')"); 
+
+
+const dbPassword = "superSecretPassword123!"; // Hardcoded password
+eval("console.log('dangerous function')"); 
